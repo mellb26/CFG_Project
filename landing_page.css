@@ -33,7 +33,7 @@ ul,li{
   text-decoration: none;
   color: black;
   font-family: 'Karla', sans-serif;
-  font-size: 3vmin;
+  font-size: 2vmin;
   text-transform: uppercase;
 }
 
@@ -192,7 +192,7 @@ input { /* hide the checkbox */
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Rotate animation of the icon */
@@ -202,12 +202,12 @@ input { /* hide the checkbox */
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Mediaquery for smaller screen */
 @media screen and (max-width: 768px) {
-.nav-link{
+.topnav .nav-link{
 display: none;
 }
 
@@ -220,6 +220,11 @@ margin-top: -5%;
   display: block;
   margin-right: 20px;
 }
+.menu{
+  height: 2000px;
+  z-index: 1;
+}
+
 }
 
 
