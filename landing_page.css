@@ -1,0 +1,261 @@
+/*.container{
+    display:grid;
+    height:1024px;
+    width:1350px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas:
+       "nav nav nav nav"
+       "main main main main"
+       "content1 content1 content1 content1"
+       "content2 content2 content2 content2"
+       "content3 content3 content3 content3"
+       "footer footer footer footer";
+    
+    font-family:'Courier New', monospace; 
+
+    
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anek+Telugu:wght@200&family=Cormorant+Garamond:ital,wght@1,500&family=Dosis:wght@500&family=Inconsolata&family=Karla:wght@200&family=Quicksand:wght@500&family=Square+Peg&display=swap');
+
+*{
+margin:0;
+padding:0;
+}
+
+ul,li{
+  list-style: none;
+  text-decoration: none;
+}
+
+.topnav a, .mobile-nav a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Karla', sans-serif;
+  font-size: 3vmin;
+  text-transform: uppercase;
+}
+
+.topnav a:hover{
+color: rgb(218, 211, 203);
+}
+
+.topnav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+overflow: hidden;
+}
+
+.mobile-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 3rem;
+  display: none;
+}
+
+/* Change applies to li but not to the logo */
+.topnav li:not(.centered-logo){ 
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Change the size of the img */
+.logo img{
+  width:220px ;
+}
+
+.centered-logo{
+  margin-left: auto;
+}
+
+
+/* Mobile */
+input { /* hide the checkbox */
+  display: none;
+}
+
+.open { /* The icon, the second line of the icon */ 
+  background-color: black;
+  width: 32px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  top:-160px;
+}
+
+.open:before { /* first line of the icon */
+  content: "";
+  background-color: black;
+  width: 32px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: -8px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.open:after { /* third line of the icon */
+  content: "";
+  background-color: #3c3c3c;
+  width: 32px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: 4px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.menuOpen { /* The container of the icon */
+  width: 30px;
+  height: 30px;
+  display: block;
+  padding: 30px;
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+
+.menu { /* The opened menu */
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: white;
+}
+
+.menu label { /* The toggle box, when user click it the menu will be displayed */
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.menu .menuContent { /* Content inside the mobile navbar */
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  line-height: 5rem;
+  margin-top: 100px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.menu ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-family: 'Karla', sans-serif;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.menu ul li a:hover {
+  color: rgb(218, 211, 203);
+}
+
+.menuEffects {
+  opacity: 0;
+  visibility:hidden;
+}
+
+#menuToggle:checked  ~ .menuEffects {
+  opacity: 1;
+  visibility:visible; /* Allow the whole page menubar to be visible */
+  transition: opacity 0.5s;
+}
+
+#menuToggle:checked ~ .menuOpen .open { /* The second line of the icon color */
+  background-color: black;
+}
+
+/* Rotate animation of the icon */
+#menuToggle:checked ~ .menuOpen .open:before { /* line 1 of the icon cross */
+  background-color: black;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* Rotate animation of the icon */
+#menuToggle:checked ~ .menuOpen .open:after { /* line 2 of the icon cross */
+  background-color: black;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* Mediaquery for smaller screen */
+@media screen and (max-width: 768px) {
+.nav-link{
+display: none;
+}
+
+.centered-logo{
+margin-left: -70%;
+margin-top: -5%;
+}
+
+.menuOpen{
+  display: block;
+  margin-right: 20px;
+}
+}
+
+
+/*
+main{
+background: #ffe6e6;
+grid-area:main;
+font-weight: bold;
+}
+
+
+
+#content1{
+    background: #ffe6e6;
+    grid-area: content1;
+    font-weight:bold;
+    
+}
+#content2{
+    background: #ffe6e6;
+    grid-area: content2;
+    font-weight:bold;
+    
+}
+#content3{
+    background: black;
+    grid-area: content3;
+    font-weight:bold;
+    
+}
+
+
+footer{
+    background: black;
+    grid-area: footer;
+    font-weight:bold;
+
+}
+*/
