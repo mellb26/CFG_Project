@@ -14,7 +14,7 @@ ul,li{
   text-decoration: none;
   color: black;
   font-family: 'Karla', sans-serif;
-  font-size: 2vmin;
+  font-size: 2.5vmin;
   text-transform: uppercase;
 }
 
@@ -46,7 +46,7 @@ overflow: hidden;
 
 /* Change the size of the img */
 .logo img{
-  width:220px ;
+  width:200px ;
 }
 
 .centered-logo{
@@ -195,15 +195,21 @@ input { /* hide the checkbox */
 display: none;
 }
 
+.logo img{
+  width: 180px;
+  margin-top: 15px;
+}
+
 .centered-logo{
-margin-left: -70%;
-margin-top: -5%;
+margin-left: -80%;
+margin-top: -30px;
 }
 
 .menuOpen{
   display:block;
   margin-right: 20px;
 }
+
 .about-pic{
   display: none !important;
 }
