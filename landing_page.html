@@ -15,45 +15,35 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   
-
 </head>
 
 <body>
   
-        <nav>
             <!-- Web Size -->
-            <!-- navebar -->
-           <ul class="topnav" id="myTopnav">
-               <li><a href="#" class="nav-link">About Us</a></li>
-               <li><a href="/recipe_page.html" class="nav-link">Recipes</a></li>
-               <li class="centered-logo">
-                <a href="landing_page.html">
-                <div class="logo"><img src="Greencipe logo.png"></div></a></li>
-               <li><a href="#" class="nav-link">Share With Us</a></li>
-               <li><a href="#" class="nav-link">Subscribe</a></li>
-           </ul>
-    
-           <!-- Mobile size-->
-        
-          <input type="checkbox" id="menuToggle"></input>
-          <label for="menuToggle" class="menuOpen">
-            <div class="open"></div>
-          </label>
-          
-          <div id="menu" class="menuEffects">
-            <label for="menuToggle"></label>
-            <div class="menuContent">
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Share With Us</a></li>
-                <li><a href="#">Subscribe</a></li>
-              </ul>
-            </div>
-          </div>
-      
-    </nav>
+            <nav>
+              <ul class="topnav" id="myTopnav">
+                <li><a href="#" class="nav-link">About Us</a></li>
+                <li><a href="#" class="nav-link">Recipes</a></li>
+                <li class="centered-logo">
+                 <a href="#">
+                 <div class="logo"><img src="Greencipe logo.png"></div></a></li>
+                <li><a href="#" class="nav-link">Share With Us</a></li>
+                <li><a href="#" class="nav-link">Subscribe</a></li>
+            </ul>
 
+            <!-- Smaller Screen-->
+            <label>
+              <input type="checkbox">
+              <span class="icon-container"> <span class="hamburger"></span> </span>
+              <ul>
+                  <li><a href="/landing_page.html">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Recipes</a></li>
+                  <li><a href="#">Share With Us</a></li>
+                  <li><a href="#">Subscribe</a></li>
+                </ul>
+                </label>
+              </nav>
 
 <!-- Slideshow -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -134,9 +124,10 @@
                <a href="#" target="_blank"><img class="card-img-top" src="food4.jpeg" alt=""></a>
           </div>
            <div class="card-body">
-              <a href="#" target="_blank"><button class="btn btn-warning btn-lg">AVOCADO</button></a>
+            <div class="col text-center">
+              <a href="#" target="_blank"><button class="btn btn-warning btn-lg align-content-center " style="margin-bottom:1rem; font-family: 'Baskervville', serif;">AVOCADO</button></a></div>
               <h4 class="card-title"></h4>
-              <p class="card-text">Is there anything this buttery, nutritious, delectable little green guy doesn't improve?! Full of healthy fats and creamy texture, it makes every single thing it's smushed on, chunked on, or mixed into a whole bunch more delicious.</p>
+              <p class="card-text" style="text-align:center; font-family: 'Karla', sans-serif;">Is there anything this buttery, nutritious, delectable little green guy doesn't improve?! Full of healthy fats and creamy texture, it makes every single thing it's smushed on, chunked on, or mixed into a whole bunch more delicious.</p>
             </div>
         </div>
        </div>
@@ -149,7 +140,8 @@
                   <a href="#" target="_blank"><img class="card-img-top" src="food5.jpeg" alt=""></a>
                 </div>
                   <div class="card-body">
-	          <a href="#" target="_blank"><button class="btn btn-warning btn-lg">DRINKS</button></a>
+                    <div class="col text-center">
+	          <a href="#" target="_blank"><button class="btn btn-warning btn-lg align-content-center" style="margin-bottom:1rem; font-family: 'Baskervville', serif;">DRINKS</button></a></div>
               <h4 class="card-title"></h4>
               <p class="card-text">Not just stuff on plates around here! We have a whole lineup of bevs for whatever drinkable need you're serving, whether it's just a nice way to start your morning or an afternoon pick-me-up or maybe something fun & fancy for the patio. We've got you!</p>
             </div>
@@ -164,9 +156,10 @@
               <a href="#" target="_blank"><img class="card-img-top" src="food6.jpeg" alt=""></a>
             </div>
             <div class="card-body">
-	       <a href="#" target="_blank"><button class="btn btn-warning btn-lg">PASTA</button></a>
-              <h4 class="card-title"></h4>
-              <p class="card-text justify">Ugh, of COURSE we would eat pasta for every single meal if we could. But let's be reasonable, maybe just 8 times per week? Just, like, how do you choose between fork twirly or perfectly chewy or positively smothered in all the best sauces? Oh pasta, we love you so.</p>
+              <div class="col text-center">
+	       <a href="#" target="_blank"><button class="btn btn-warning btn-lg" style="margin-bottom:1rem; font-family: 'Baskervville', serif;">PASTA</button></a>
+              <h4 class="card-title"></h4></div></div>
+              <p class="card-text justify" style="text-align:center; font-family: 'Karla', sans-serif;">Ugh, of COURSE we would eat pasta for every single meal if we could. But let's be reasonable, maybe just 8 times per week? Just, like, how do you choose between fork twirly or perfectly chewy or positively smothered in all the best sauces? Oh pasta, we love you so.</p>
             </div>  
           </div>
             </div>
