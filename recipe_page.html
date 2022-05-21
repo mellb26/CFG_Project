@@ -8,57 +8,64 @@
     <title> Recipes </title>
 
     <link rel="stylesheet" href="/recipe_page.css">
+
+   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+ 
 </head>
 
 <body>
 
-    <nav>
-        <!-- Web Size -->
-        <!-- navebar -->
-       <ul class="topnav" id="myTopnav">
-           <li><a href="#" class="nav-link">About Us</a></li>
-           <li><a href="#" class="nav-link">Recipes</a></li>
-           <li class="centered-logo">
-            <a href="#">
-            <div class="logo"><img src="Greencipe logo.png"></div></a></li>
-           <li><a href="#" class="nav-link">Share With Us</a></li>
-           <li><a href="#" class="nav-link">Subscribe</a></li>
-       </ul>
-
-       <!-- Mobile size-->
-    
-      <input type="checkbox" id="menuToggle"></input>
-      <label for="menuToggle" class="menuOpen">
-        <div class="open"></div>
-      </label>
-      
-      <div id="menu" class="menuEffects">
-        <label for="menuToggle"></label>
-        <div class="menuContent">
-          <ul>
+  <div class="bg"></div>
+   
+       <!-- Mobile size -->
+       <label>
+        <input type="checkbox">
+        <span class="icon-container"> <span class="hamburger"></span> </span>
+        <ul>
+            <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Recipes</a></li>
             <li><a href="#">Share With Us</a></li>
             <li><a href="#">Subscribe</a></li>
           </ul>
-        </div>
-      </div>
-  
-</nav>
+          </label>
 
+<!--Recipe Cards -->
+<section class="heading">
+  <h1>Our Recipes</h1>
+<div class="button-container">
+  <button type="button" class="btn ">Category</button>
+  <button type="button" class="btn ">Category</button>
+  <button type="button" class="btn ">Category</button>
+  </div>
+</section>
 
-    <div class="card-container">
-        <div class="card u-clearfix">
-          <div class="card-body">
-            <span class="card-number card-circle subtle">01</span>
-            <span class="card-author subtle">John Smith</span>
-            <h2 class="card-title">New Brunch Recipe</h2>
-            <span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
-            <div class="card-read">Read</div>
-            <span class="card-tag card-circle subtle">C</span>
-          </div>
-          <img src="https://s15.postimg.cc/temvv7u4r/recipe.jpg" alt="" class="card-media" />
-        </div>
-        <div class="card-shadow"></div>
-      </div>
+  <section id="recipes_container">
+  <div class="card" >
+    <img class="card-img" src="Spinach-Mushroom-French-Bread-Pizzas-V1.jpeg">
+    <div class="card-body">
+      <h5 class="card-title">SPINACH MUSHROOM FRENCH BREAD PIZZAS</h5>
+      <p class="card-text">They have a garlic bread base for extra flavor and then are topped with a simple mix of spinach, sautéed mushrooms, and cheese. Simple but perfect!</p>
+    </div>
+  </div>
+
+  <div class="card" >
+    <img class="card-img" src="Okonomiyaki_001.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Okonomiyaki </h5>
+      <p class="card-text">This popular Japanese street food is a savory version of Japanese pancake. Once tried, you’ll be coming back for more!</p>
+     
+    </div>
+  </div>
+
+  <div class="card" >
+    <img class="card-img" src="recipe_3.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      
+    </div>
+  </div>
+
+</section> 
 </body>
