@@ -9,24 +9,23 @@
 
     <link rel="stylesheet" href="/recipe_page.css">
 
-   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
  
 </head>
 
 <body>
-
+<!-- Heading banner-->
   <div class="bg"></div>
    
-       <!-- Mobile size -->
+       <!-- Drop-down nav -->
        <label>
         <input type="checkbox">
         <span class="icon-container"> <span class="hamburger"></span> </span>
         <ul>
             <li><a href="/landing_page.html">Home</a></li>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">Share With Us</a></li>
-            <li><a href="#">Subscribe</a></li>
+            <li><a href="/share_with_us.html">Share With Us</a></li>
+            <li><a href="/Subscribe.html">Subscribe</a></li>
           </ul>
           </label>
 
@@ -34,38 +33,44 @@
 <section class="heading">
   <h1>Our Recipes</h1>
 <div class="button-container">
-  <button type="button" class="btn ">Category</button>
-  <button type="button" class="btn ">Category</button>
-  <button type="button" class="btn ">Category</button>
+  <button type="button" class="button">Category</button>
+  <button type="button" class="button ">Category</button>
+  <button type="button" class="button ">Category</button>
   </div>
 </section>
 
   <section id="recipes_container">
-  <div class="card" >
-    <img class="card-img" src="Spinach-Mushroom-French-Bread-Pizzas-V1.jpeg">
-    <div class="card-body">
-      <h5 class="card-title">SPINACH MUSHROOM FRENCH BREAD PIZZAS</h5>
-      <p class="card-text">They have a garlic bread base for extra flavor and then are topped with a simple mix of spinach, sautéed mushrooms, and cheese. Simple but perfect!</p>
+  <div class="recipe-card" >
+    <img class="card-image" src="Spinach-Mushroom-French-Bread-Pizzas-V1.jpeg">
+    <div class="card-content">
+      <h5 class="title">SPINACH MUSHROOM FRENCH BREAD PIZZAS</h5>
+      <p class="text">They have a garlic bread base for extra flavor and then are topped with a simple mix of spinach, sautéed mushrooms, and cheese. Simple but perfect!</p>
     </div>
   </div>
 
-  <div class="card" >
-    <img class="card-img" src="Okonomiyaki_001.jpeg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Okonomiyaki </h5>
-      <p class="card-text">This popular Japanese street food is a savory version of Japanese pancake. Once tried, you’ll be coming back for more!</p>
+  <div class="recipe-card" >
+    <img class="card-image" src="Okonomiyaki_001.jpeg" alt="Card image cap">
+    <div class="card-content">
+      <h5 class="title">Okonomiyaki </h5>
+      <p class="text">This popular Japanese street food is a savory version of Japanese pancake. Once tried, you’ll be coming back for more!</p>
      
     </div>
   </div>
 
-  <div class="card" >
-    <img class="card-img" src="recipe_3.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+  <div class="recipe-card" >
+    <img class="card-image" src="recipe_3.jpg" alt="Card image cap">
+    <div class="card-content">
+      <h5 class="title">Card title</h5>
+      <p class="text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
       
     </div>
   </div>
 
 </section> 
+
+<footer>
+  <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by <a href="#">CFG</a>.</p>
+ </footer>
+
 </body>
+</html>
